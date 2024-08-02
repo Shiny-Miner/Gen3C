@@ -1,15 +1,15 @@
 
-Passaggi:
-A 0x806F282 (control loop of normal menu) c'è un hijack, che manda al codice C input_handler.
-input_handler controlla se sia stato premuto A, Select, start o B e conosce se al momneto siamo nel menu principale o nel side.
-DA lì input_handler eventualmente passa il controllo a poketools per l'apertura delle scelte.
-Se viene scelta un'opzione del menù temporaneo, il controllo passa all'engine che legge la config del menu e reagisce appropriatamente
+Steps:
+At 0x806F282 (control loop of normal menu) there is a hijack, which sends the input_handler to the C code.
+input_handler checks whether A, Select, start or B has been pressed and knows whether we are currently in the main menu or in the side.
+FROM there input_handler eventually passes control to poketools for opening choices.
+If a temporary menu option is chosen, control passes to the engine which reads the menu config and reacts appropriately
 
 TODOS:
-Nome menu che si riflette sul menu configurabile
-Callabile da oggetto FATTO (La macro BY_ITEM prende un id dell'array di feature implementate e crea 3 funzioni La funzione gui_##id##_new_gui_by_item se messa come offset di un item apre quella gui)
-inserimento al posto dell'oggetto automatico?
-Bg deve essere una func provider per customizzarla FATTO
-grafichetta swap? whynot
+Menu name reflected on the configurable menu
+Callable from DONE object (The BY_ITEM macro takes an id of the array of implemented features and creates 3 functions. The gui_##id##_new_gui_by_item function, if placed as an offset of an item, opens that gui)
+insertion instead of automatic object?
+Bg must be a func provider to customize it DONE
+swap graphic? whynot
 
 in this demo, the teachy tv redirects to gui_1 (main.s)
