@@ -42,15 +42,15 @@ Gets to 08082B20
 
 
 
-
-a 083D37A0 c'è la table con le icone (extern const u8 pokeicon_table[410][POKEAGB_POKEMON_ICON_SIZE];)
+at 083D37A0 there is the table with the icons (extern const u8 pokeicon_table[410]
+[POKEAGB_POKEMON_ICON_SIZE];)
 
 08D2FE78 palc_normal_bulbasaur
 refereced by
 0823730C palc_table_normal
 
 
-dal dexnav rubo
+from dexnav I steal
 
 
     // check which palette the species icon uses
